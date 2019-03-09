@@ -1,1 +1,8 @@
 $default-color: #16b13a;
+$btn-color: #3f94e3;
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -62,12 +62,10 @@ export default {
         bottom: .2rem;
         font-size: 1.5rem;
         color: #fff;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         width: 100%;
         line-height: 2rem;
         padding-left: .5rem;
+        @include ellipsis;
     }
 }
 </style>

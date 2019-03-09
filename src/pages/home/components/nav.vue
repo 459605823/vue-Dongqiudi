@@ -31,7 +31,7 @@ export default {
               font-weight: 500;
           }
           a:hover {
-              color: #16b13a;
+              color: $default-color;
           }
        }
    }

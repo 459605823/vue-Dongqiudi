@@ -15,7 +15,7 @@ export default {
     .home-header {
        text-align: center;
        line-height: 4rem;
-       background-color: #16b13a;
+       background-color: $default-color;
        width: 100%;
        h1 {
           color: #fff;
