@@ -13,7 +13,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/archive',
+      path: '/archive/:number',
       name: 'Archive',
       component: Archive
     }

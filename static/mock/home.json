@@ -1,0 +1,53 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/AD/640x256/crop/-/ChNLklyCYu-AJhsHAAh0yfLtkWo122.png",
+      "imgTitle": "恒大1-0泰达取联赛开局两连胜，保利尼奥造杜佳黄油手"
+    }, {
+      "id": "0002",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/AE/640x256/crop/-/ChMf8FyCFo2AN_eEAAC2s9bJkxM839.jpg",
+      "imgTitle": "比卡纳瓦罗更适合国足的人，现在看来还真没有"
+    }, {
+      "id": "0003",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/C3/640x256/crop/-/ChMf8FyHu92AXfU2AApLhdDOpPw053.png",
+      "imgTitle": "皇家马德里：反击从现在开始"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/C2/640x256/crop/-/ChMf8FyHdz6AXlxTAAI1BfmIUnM722.jpg",
+      "imgTitle": "山东2-2鹿岛，佩莱梅开二度，伊藤翔四分钟内连入两球"
+    }, {
+      "id": "0005",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/C0/640x256/crop/-/ChMf8FyHIvyAC8LmAAuZgvdad6I843.png",
+      "imgTitle": "欧冠赛场上“翻盘奇迹”越来越多，究竟为哪般？"
+    }],
+    "articles": [{
+        "id": "001",
+        "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/B3/180x135/crop/-/ChMf8FyDerKAGXUsAAKfvZbdmrE402.jpg",
+        "title": "国安4-0客胜重庆，张玉宁中超首球，比埃拉造3球，巴坎布传射",
+        "comments": 1462
+    }, {
+      "id": "002",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/B1/180x135/crop/-/ChNLklyDhGyAEjTrAAI51XSunFQ388.jpg",
+      "title": "山东2-2河南，格德斯双响，巴索戈破门，伊沃争议点球扳平",
+      "comments": 1862
+    }, {
+      "id": "003",
+      "imgUrl": "https://img1.qunliao.info/fastdfs3/M00/1F/AE/180x135/crop/-/ChONolyDU4OAe1pjAAIa7xFK_MI225.jpg",
+      "title": "连续拿出高光表现，武磊在西班牙人的地位飞速提升",
+      "comments": 866
+    }, {
+      "id": "004",
+      "imgUrl": "https://img1.qunliao.info/fastdfs4/M00/C8/59/180x135/crop/-/ChMf8FxrSn2AeM9MAAF59wMdQ6E997.jpg",
+      "title": "世体：巴萨已经计划和梅西续约至2022或2023年",
+      "comments": 2966
+    }, {
+      "id": "005",
+      "imgUrl": "https://img1.qunliao.info/fastdfs3/M00/22/3C/180x135/crop/-/ChO2w1yGgw-AUj1eAANENfNXtzU174.jpg",
+      "title": "欧冠赛场上“翻盘奇迹”越来越多，究竟为哪般？",
+      "comments": 523
+    }]
+   
+  }
+}

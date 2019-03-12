@@ -2,7 +2,7 @@
   <!-- 外层使用一层div包裹，在图片未加载完成时，div撑开高度，防止下部内容发生抖动 -->
   <div class="wrapper">
       <swiper :options="swiperOption">
-        <swiper-slide v-for="(item, index) in imgList" :key="index">
+        <swiper-slide v-for="item in swiperList" :key="item.id">
           <img class="swiper-img" :src="item.imgUrl" />
           <div class="img-title">{{item.imgTitle}}</div>
         </swiper-slide>
@@ -21,29 +21,10 @@ export default {
         pagination: '.swiper-pagination',
         // 支持循环轮播
         loop: true
-      },
-      imgList: [{
-        imgUrl: 'https://img1.qunliao.info/fastdfs4/M00/C8/AD/640x256/crop/-/ChNLklyCYu-AJhsHAAh0yfLtkWo122.png',
-        imgTitle: '恒大1-0泰达取联赛开局两连胜，保利尼奥造杜佳黄油手'
-      },
-      {
-        imgUrl: 'https://img1.qunliao.info/fastdfs4/M00/C8/AE/640x256/crop/-/ChMf8FyCFo2AN_eEAAC2s9bJkxM839.jpg',
-        imgTitle: '比卡纳瓦罗更适合国足的人，现在看来还真没有'
-      },
-      {
-        imgUrl: 'https://img1.qunliao.info/fastdfs4/M00/C8/AE/640x256/crop/-/ChMf8FyCFo2AN_eEAAC2s9bJkxM839.jpg',
-        imgTitle: '比卡纳瓦罗更适合国足的人，现在看来还真没有'
-      },
-      {
-        imgUrl: 'https://img1.qunliao.info/fastdfs4/M00/C8/AE/640x256/crop/-/ChMf8FyCFo2AN_eEAAC2s9bJkxM839.jpg',
-        imgTitle: '比卡纳瓦罗更适合国足的人，现在看来还真没有'
-      },
-      {
-        imgUrl: 'https://img1.qunliao.info/fastdfs4/M00/C8/AE/640x256/crop/-/ChMf8FyCFo2AN_eEAAC2s9bJkxM839.jpg',
-        imgTitle: '比卡纳瓦罗更适合国足的人，现在看来还真没有'
-      }]
+      }
     }
-  }
+  },
+  props: ['swiperList']
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="content" ref="wrapper">
+        <div class="content">
             <h1>马赛队史第一位，巴洛特利在连续上场的4场主场都有进球</h1>
             <div class="article-info">
                 <span class="writer">Rigeman</span>
