@@ -1,15 +1,15 @@
 <template>
     <div>
-        <router-link :to="'/archive/' + item.id" v-for="item in articles" :key="item.id">
-          <div class="item">
-            <div class="item-left">
-                <p>{{item.title}}</p>
-                <p class="comment"><span class="fix-top">置顶</span>{{item.comments}}评论</p>
+        <router-link :to="'/archive/' + item.id" v-for="(item, index) in articles" :key="index">
+            <div class="item">
+                <div class="item-left">
+                    <p>{{item.title}}</p>
+                    <p class="comment"><span class="fix-top" v-if="index < 2">置顶</span>{{item.comments}}评论</p>
+                </div>
+                <div class="item-right">
+                    <img :src="item.imgUrl" alt="">
+                </div>
             </div>
-            <div class="item-right">
-                <img :src="item.imgUrl" alt="">
-            </div>
-          </div>
         </router-link>
     </div>
 </template>

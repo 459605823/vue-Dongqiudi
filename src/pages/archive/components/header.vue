@@ -3,19 +3,25 @@
         <header>
             <router-link to="/"><i class="back iconfont iconfanhui"></i></router-link>
             <span class="header-title">懂球帝</span>
-            <span class="comment">637评论</span>
+            <span class="comment">{{comments}}评论</span>
         </header>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'ArchiveHeader'
+  name: 'ArchiveHeader',
+  props: ['comments']
 }
 </script>
 
 <style lang="scss" scoped>
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
     height: 4rem;
     padding: 0 1rem;
     background-color: #fff;

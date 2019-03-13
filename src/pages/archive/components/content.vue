@@ -1,41 +1,39 @@
 <template>
     <div>
         <div class="content">
-            <h1>马赛队史第一位，巴洛特利在连续上场的4场主场都有进球</h1>
+            <h1>{{title}}</h1>
             <div class="article-info">
-                <span class="writer">Rigeman</span>
-                <span class="time">03-11 15:56</span>
+                <span class="writer">{{writer}}</span>
+                <span class="time">{{time}}</span>
             </div>
             <div class="article">
-                在从尼斯转会至马赛后，巴洛特利作为新援在马赛主场出战了4场，而这4场比赛中巴洛特利都有进球，这是马赛队史在法甲45个赛季来的首位。
-                <img src="https://img1.qunliao.info/fastdfs4/M00/C8/B0/ChNLklyDSKWAREzDAAJiPVsLKD8922.jpg" alt="">
-                在马赛1-2里尔、2-0亚眠、2-0圣埃蒂安的比赛中，巴洛特利上场时都取得了进球。
+                {{content}}
+                <img :src="imgUrl" alt="">
+                {{content}}
                 <br>
                 <br>
-                加上对阵尼斯的制胜球，巴洛特利连续4场在主场上场都取得了进球（1-0波尔多没进入大名单），这还是首位能代表马赛在法甲中做到这一点的新援。
                 <br>
                 <br>
-                再转会至马赛后，他仅出战7场就斩获了5粒进球。
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// import BScroll from 'better-scroll'
 export default {
-  name: 'ArchiveContent'
-//   mounted () {
-//     this.scroll = new BScroll(this.$refs.wrapper)
-//   }
+  name: 'ArchiveContent',
+  props: ['time', 'writer', 'content', 'title', 'imgUrl']
 }
 </script>
 
 <style lang="scss" scoped>
 .content {
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem 1rem 5rem;
+    position: absolute;
+    top: 4rem;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    padding: 2rem 1rem;
     font-size: 1.5rem;
     h1 {
         font-size: 2rem;

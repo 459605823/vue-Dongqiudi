@@ -45,16 +45,16 @@ footer {
      .comment {
          position: relative;
      }
-     .comment::after {
-         position: absolute;
-         content: '637';
-         color: $default-color;
-         background-color: #fff;
-         z-index: 3;
-         top: 0rem;
-         line-height: 1rem;
-         right: .2rem;
-     }
+    //  .comment::after {
+    //      position: absolute;
+    //      content: '637';
+    //      color: $default-color;
+    //      background-color: #fff;
+    //      z-index: 3;
+    //      top: 0rem;
+    //      line-height: 1rem;
+    //      right: .2rem;
+    //  }
      span {
          width: 4rem;
          height: 2.5rem;

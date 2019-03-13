@@ -3,8 +3,10 @@
   <div class="wrapper">
       <swiper :options="swiperOption">
         <swiper-slide v-for="item in swiperList" :key="item.id">
-          <img class="swiper-img" :src="item.imgUrl" />
-          <div class="img-title">{{item.imgTitle}}</div>
+          <router-link :to="'/archive/' + item.id">
+            <img class="swiper-img" :src="item.imgUrl" />
+            <div class="img-title">{{item.imgTitle}}</div>
+          </router-link>
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
@@ -35,6 +37,7 @@ export default {
     height: 0;
     padding-bottom: 40%;
     position: relative;
+    margin-top: 7rem;
     .swiper-img {
         width: 100%;
     }
