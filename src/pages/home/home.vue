@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header></home-header>
+        <home-header :top="top"></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
         <home-matchinfo></home-matchinfo>
         <home-article :articles="articles"></home-article>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import homeHeader from './components/header.vue'
+import homeHeader from 'common/components/header.vue'
 import homeSwiper from './components/swiper.vue'
 import homeArticle from './components/article.vue'
 import homeMatchinfo from './components/matchinfo.vue'
@@ -32,7 +32,8 @@ export default {
       swiperList: [],
       articles: [],
       isLoading: false,
-      timer: null
+      timer: null,
+      top: 0
     }
   },
   methods: {
@@ -52,6 +53,7 @@ export default {
       var scrollTop = document.documentElement.scrollTop
       var clientHeight = document.documentElement.clientHeight
       var bottom = totalHeight - scrollTop - clientHeight
+      this.top = scrollTop
       if (bottom < 50) {
         this.isLoading = true
         this.loadMore()

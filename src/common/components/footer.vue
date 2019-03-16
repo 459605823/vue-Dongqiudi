@@ -38,7 +38,7 @@ export default {
       width: 100%;
       height: 4rem;
       background-color: #fff;
-      z-index: 999;
+      z-index: 6;
       justify-content: space-between;
       align-items: center;
       .footer-btn {
