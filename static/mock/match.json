@@ -1,0 +1,127 @@
+{
+  "ret": true,
+  "data": {
+    "matches": [{
+      "id": "0001",
+      "home": {
+          "img": "http://sd.qunliao.info/fastdfs3/M00/B5/72/ChOxM1xC2A-AI_uOAAAHB-5pMAU501.png",
+          "club": "阿根廷",
+          "score" : 1
+      },
+      "away": {
+          "img": "http://sd.qunliao.info/fastdfs3/M00/B5/80/ChOxM1xC2U-AeyGIAAAEcEYRRbw864.png",
+          "club": "委内瑞拉",
+          "score": 3
+      },
+      "type": "友谊赛",
+      "time": "15:55",
+      "streamer": "PPTV"
+    }, {
+      "id": "0002",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7C/ChOxM1xC2PuALvwRAAAK3F_koeE108.png",
+        "club": "葡萄牙",
+        "score": 0
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7F/ChOxM1xC2UeAQ_ZRAAAAsB-WszA660.png",
+        "club": "乌克兰",
+        "score": 0
+      },
+      "type": "欧预赛",
+      "time": "15:55",
+      "streamer": "爱奇艺"
+    }, {
+      "id": "0003",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/76/ChOxM1xC2G2Acp31AAABNMvdP0U855.png",
+        "club": "英格兰",
+        "score": 5
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/74/ChOxM1xC2EuAYSDaAAACk9Rvueg747.png",
+        "club": "捷克",
+        "score": 0
+      },
+      "type": "欧预赛",
+      "time": "15:55",
+      "streamer": "CCTV5"
+    }, {
+      "id": "0004",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7A/ChOxM1xC2MmADiAgAAAAvPt2354968.png",
+        "club": "卢森堡",
+        "score": 2
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7A/ChOxM1xC2MiALmU4AAAAw2WfNeA646.png",
+        "club": "立陶宛",
+        "score": 1
+      },
+      "type": "欧预赛",
+      "time": "15:55",
+      "streamer": "PPTV"
+    }, {
+      "id": "0005",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2IWAJ_5gAAALpihZbkQ709.png",
+        "club": "沙尔克04",
+        "score": 0
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png",
+        "club": "塞维利亚",
+        "score": 2
+      },
+      "type": "友谊赛",
+      "time": "15:55",
+      "streamer": "暂无直播源"
+    }, {
+      "id": "0006",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7A/ChOxM1xC2NSAYWJYAAAIxirg-dg836.png",
+        "club": "摩尔多瓦",
+        "score": 1
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/77/ChOxM1xC2IKANG6tAAABFW9OqCQ523.png",
+        "club": "法国",
+        "score": 4
+      },
+      "type": "欧预赛",
+      "time": "15:55",
+      "streamer": "CCTV5"
+    }, {
+      "id": "0007",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/7A/ChOxM1xC2NOAIENZAAAIVenmXhE159.png",
+        "club": "墨西哥",
+        "score": 3
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DiAczBuAAADSRncl0Y205.png",
+        "club": "智利",
+        "score": 1
+      },
+      "type": "友谊赛",
+      "time": "15:55",
+      "streamer": "暂无直播源"
+    }, {
+      "id": "0008",
+      "home": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/93/ChOxM1xC3MKAV7hhAAApjHKuABk219.png",
+        "club": "陕西长安竞技",
+        "score": 0
+      },
+      "away": {
+        "img": "http://sd.qunliao.info/fastdfs3/M00/B5/74/ChOxM1xC2DyAI0yJAACCrEFb1wk328.png",
+        "club": "浙江绿城",
+        "score": 0
+      },
+      "type": "中甲",
+      "time": "15:55",
+      "streamer": "PPTV"
+    }]
+
+  }
+}

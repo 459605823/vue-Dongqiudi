@@ -5,7 +5,7 @@
               <i class="iconfont iconmulu"></i>
               <p class="btn-title">首页</p>
           </router-link>
-           <router-link to="/" class="footer-btn">
+           <router-link to="/match" class="footer-btn">
               <i class="iconfont iconzhiboquyubofang"></i>
               <p class="btn-title">比赛</p>
           </router-link>

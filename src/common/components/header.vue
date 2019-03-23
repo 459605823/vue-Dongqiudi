@@ -119,13 +119,8 @@
 
 <script>
 export default {
-  name: 'header',
-  props: ['top'],
-  data () {
-    return {
-      list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦']
-    }
-  },
+  name: 'Header',
+  props: ['top', 'list'],
   methods: {
     mo (e) {
       e.preventDefault()

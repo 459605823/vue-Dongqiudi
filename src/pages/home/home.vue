@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header :top="top"></home-header>
+        <home-header :top="top" :list="list"></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
         <home-matchinfo></home-matchinfo>
         <home-article :articles="articles"></home-article>
@@ -33,7 +33,8 @@ export default {
       articles: [],
       isLoading: false,
       timer: null,
-      top: 0
+      top: 0,
+      list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦']
     }
   },
   methods: {
