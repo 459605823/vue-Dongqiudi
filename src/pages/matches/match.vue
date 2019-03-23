@@ -1,6 +1,6 @@
 <template>
     <div>
-      <match-header :top="top" :list="list"></match-header>
+      <match-header :list="list"></match-header>
       <div class="matchinfo-banner">
           2019-03-23 今天 星期六
       </div>
@@ -52,7 +52,6 @@ export default {
       matches: [],
       isLoading: false,
       timer: null,
-      top: 0,
       list: ['中超', '欧冠', '英超', '西甲', '意甲', '德甲', '集锦']
     }
   },
@@ -72,7 +71,6 @@ export default {
       var scrollTop = document.documentElement.scrollTop
       var clientHeight = document.documentElement.clientHeight
       var bottom = totalHeight - scrollTop - clientHeight
-      this.top = scrollTop
       if (bottom < 50) {
         this.isLoading = true
         this.loadMore()

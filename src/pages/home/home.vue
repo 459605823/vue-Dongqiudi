@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header :top="top" :list="list"></home-header>
+        <home-header :list="list"></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
         <home-matchinfo></home-matchinfo>
         <home-article :articles="articles"></home-article>
@@ -33,7 +33,6 @@ export default {
       articles: [],
       isLoading: false,
       timer: null,
-      top: 0,
       list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦']
     }
   },
@@ -54,7 +53,6 @@ export default {
       var scrollTop = document.documentElement.scrollTop
       var clientHeight = document.documentElement.clientHeight
       var bottom = totalHeight - scrollTop - clientHeight
-      this.top = scrollTop
       if (bottom < 50) {
         this.isLoading = true
         this.loadMore()

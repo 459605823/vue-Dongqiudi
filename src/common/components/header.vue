@@ -120,7 +120,7 @@
 <script>
 export default {
   name: 'Header',
-  props: ['top', 'list'],
+  props: ['list'],
   methods: {
     mo (e) {
       e.preventDefault()
@@ -128,7 +128,7 @@ export default {
     showSidebar () {
       this.$refs.sidebar.style.left = 0
       this.$refs.shadow.style.display = 'block'
-      this.$refs.sidebar.style.top = this.top + 'px'
+      // this.$refs.sidebar.style.top = this.top + 'px'
       document.body.style.overflow = 'hidden'
       document.addEventListener('touchmove', this.mo, {passive: false}) // 禁止页面滑动
     },
@@ -196,7 +196,7 @@ export default {
        left: 0;
        bottom: 0;
        right: 0;
-       z-index: 1000;
+       z-index: 101;
        display: none;
    }
    .sidebar {
@@ -205,8 +205,8 @@ export default {
        bottom: 0;
        width: 25rem;
        left: -25rem;
-       position: absolute;
-       z-index: 1001;
+       position: fixed;
+       z-index: 102;
        transition: left .2s ease-in-out;
        .sidebar-header {
            position: relative;
@@ -272,7 +272,6 @@ export default {
                background-color: #fff;
                margin-bottom: .8rem;
                li {
-                   height: 3rem;
                    line-height: 3rem;
                    padding-left: 1rem;
                    border-bottom: 1px solid #eee;
@@ -284,11 +283,10 @@ export default {
            }
            .toolsbar {
                overflow: auto;
-               height: 22rem;
                background-color: #fff;
                display: flex;
                flex-direction: column;
-               padding: 1rem;
+               padding: 1rem 1rem 50rem 1rem;
                justify-content: space-between;
                .row {
                    display: flex;
@@ -316,10 +314,9 @@ export default {
            }
        }
        .sidebar-footer {
-           position: relative;
+           position: absolute;
            bottom: 0;
            left: 0;
-           height: 4rem;
            width: 100%;
            display: flex;
            justify-content: space-between;
@@ -328,6 +325,7 @@ export default {
            border-top: 1px solid #ddd;
            background-color: #fff;
            z-index: 8;
+           height: 4rem;
            .footer-controler {
                font-size: 1.5rem;
                width: 5rem;
