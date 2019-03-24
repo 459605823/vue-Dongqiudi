@@ -1,5 +1,5 @@
 <template>
-      <div v-if="isLoading" class="loading-wrapper">
+    <div v-if="isLoading" class="loading-wrapper">
        <div class="football iconfont iconzuqiu-"></div>
        <span>懂球帝正在加载</span>
     </div>

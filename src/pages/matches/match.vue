@@ -56,10 +56,10 @@ export default {
     }
   },
   methods: {
-    getHomeInfo () {
-      axios.get('static/mock/match.json').then(this.getHomeInfoSucc)
+    getMatchInfo () {
+      axios.get('static/mock/match.json').then(this.getMatchInfoSucc)
     },
-    getHomeInfoSucc (res) {
+    getMatchInfoSucc (res) {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
@@ -94,8 +94,15 @@ export default {
     }
   },
   mounted () {
-    this.getHomeInfo()
+    this.getMatchInfo()
+  },
+  activated () { // keep-alive组件激活时调用
     window.addEventListener('scroll', this.handlescroll)
+  },
+  deactivated () { // keep-alive组件停用时调用
+    // 绑定在window上的全局事件会在不同组件中触发，在离开当前组件时要对全局事件解绑
+    // 跳转至另一个页面时要解除事件，防止在另一个页面触发当前页面的事件
+    window.removeEventListener('scroll', this.handlescroll)
   }
 }
 </script>
