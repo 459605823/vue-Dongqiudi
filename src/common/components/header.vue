@@ -122,22 +122,21 @@ export default {
   name: 'Header',
   props: ['list'],
   methods: {
-    mo (e) {
-      e.preventDefault()
-    },
     showSidebar () {
       this.$refs.sidebar.style.left = 0
       this.$refs.shadow.style.display = 'block'
-      // this.$refs.sidebar.style.top = this.top + 'px'
-      document.body.style.overflow = 'hidden'
-      document.addEventListener('touchmove', this.mo, {passive: false}) // 禁止页面滑动
+      this.$modalHelper.afterOpen()
     },
     hideSidebar () {
       this.$refs.sidebar.style.left = '-25rem'
       this.$refs.shadow.style.display = 'none'
-      document.body.style.overflow = 'auto'
-      document.removeEventListener('touchmove', this.mo, {passive: false}) // 允许页面滑动
+      this.$modalHelper.beforeClose()
     }
+  },
+  // 如果点击返回离开当前路由，也要恢复页面滚动
+  beforeRouteLeave (to, from, next) {
+    this.$modalHelper.beforeClose()
+    next()
   }
 }
 </script>
@@ -208,6 +207,7 @@ export default {
        position: fixed;
        z-index: 102;
        transition: left .2s ease-in-out;
+       overflow: hidden;
        .sidebar-header {
            position: relative;
            width: 100%;
@@ -286,6 +286,7 @@ export default {
                background-color: #fff;
                display: flex;
                flex-direction: column;
+               height: 20rem;
                padding: 1rem 1rem 50rem 1rem;
                justify-content: space-between;
                .row {

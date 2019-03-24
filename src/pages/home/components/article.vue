@@ -33,7 +33,7 @@ export default {
         height: 8rem;
         margin-right: 1rem;
         position: relative;
-        width: 16.25rem;
+        width:70%;
         .comment {
             font-size: 1rem;
             position: absolute;
@@ -50,7 +50,7 @@ export default {
     }
     .item-right {
         img {
-            width: 12rem;
+            width:100%;
             height: 8rem;
         }
     }
