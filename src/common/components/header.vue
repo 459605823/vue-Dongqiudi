@@ -208,6 +208,8 @@ export default {
        z-index: 102;
        transition: left .2s ease-in-out;
        overflow: hidden;
+       display: flex;
+       flex-direction: column;
        .sidebar-header {
            position: relative;
            width: 100%;
@@ -268,6 +270,9 @@ export default {
            background-color: #eee;
            width: 100%;
            padding-top: .8rem;
+           flex: 1;
+           display: flex;
+           flex-direction: column;
            .sidebar-list {
                background-color: #fff;
                margin-bottom: .8rem;
@@ -286,8 +291,8 @@ export default {
                background-color: #fff;
                display: flex;
                flex-direction: column;
-               padding: 1rem;
-               justify-content: space-between;
+               padding: 1rem 1rem 10rem 1rem;
+               flex: 1;
                .row {
                    display: flex;
                    justify-content: space-between;
