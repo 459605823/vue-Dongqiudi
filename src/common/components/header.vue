@@ -286,8 +286,7 @@ export default {
                background-color: #fff;
                display: flex;
                flex-direction: column;
-               height: 20rem;
-               padding: 1rem 1rem 50rem 1rem;
+               padding: 1rem;
                justify-content: space-between;
                .row {
                    display: flex;
