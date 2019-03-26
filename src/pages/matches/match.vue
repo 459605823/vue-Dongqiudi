@@ -1,6 +1,6 @@
 <template>
     <div>
-      <match-header :list="list"></match-header>
+      <match-header :list="list" :headTitle="headTitle"></match-header>
       <div class="matchinfo-banner">
           2019-03-23 今天 星期六
       </div>
@@ -52,7 +52,8 @@ export default {
       matches: [],
       isLoading: false,
       timer: null,
-      list: ['中超', '欧冠', '英超', '西甲', '意甲', '德甲', '集锦']
+      list: ['中超', '欧冠', '英超', '西甲', '意甲', '德甲', '集锦'],
+      headTitle: '比赛'
     }
   },
   methods: {

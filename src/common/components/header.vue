@@ -3,7 +3,7 @@
     <div class="header">
         <div class="home-header">
             <img src="https://img1.qunliao.info/fastdfs4/M00/B1/6D/100x100/-/-/ChMf8FxIslCANJOdAAAok1n7B7I893.jpg" alt="" class="user-avatar" @click="showSidebar">
-            <h1>懂球帝</h1>
+            <h1>{{headTitle}}</h1>
         </div>
         <div class="home-nav">
             <ul>
@@ -123,7 +123,13 @@
 import BScroll from 'better-scroll'
 export default {
   name: 'Header',
-  props: ['list'],
+  props: {
+    list: Array,
+    headTitle: {
+      type: String,
+      default: '懂球帝'
+    }
+  },
   methods: {
     showSidebar () {
       this.$refs.sidebar.style.left = 0
