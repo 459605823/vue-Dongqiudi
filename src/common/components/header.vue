@@ -13,88 +13,90 @@
     </div>
     <div class="shadow" ref="shadow" @click="hideSidebar"></div>
     <div class="sidebar" ref="sidebar">
-        <div class="sidebar-header">
-            <div class="cover"></div>
-            <div class="top">
-                <div class="header-top">
-                    <img class="sidebar-avatar" src="https://img1.qunliao.info/fastdfs4/M00/B1/6D/100x100/-/-/ChMf8FxIslCANJOdAAAok1n7B7I893.jpg" alt="">
-                    <div class="userinfo">
-                        <h4>username</h4>
-                        <p class="days">已成为懂球帝1788天</p>
+        <div class="sidebar-scroll">
+            <div class="sidebar-header">
+                <div class="cover"></div>
+                <div class="top">
+                    <div class="header-top">
+                        <img class="sidebar-avatar" src="https://img1.qunliao.info/fastdfs4/M00/B1/6D/100x100/-/-/ChMf8FxIslCANJOdAAAok1n7B7I893.jpg" alt="">
+                        <div class="userinfo">
+                            <h4>username</h4>
+                            <p class="days">已成为懂球帝1788天</p>
+                        </div>
                     </div>
-                </div>
-                <div class="header-nav">
-                    <div class="nav-item">
-                        <p class="nav-number">0</p>
-                        <p class="nav-type">关注</p>
-                    </div>
-                    <div class="dash"></div>
-                    <div class="nav-item">
-                        <p class="nav-number">0</p>
-                        <p class="nav-type">粉丝</p>
-                    </div>
-                    <div class="dash"></div>
-                    <div class="nav-item">
-                        <p class="nav-number">0</p>
-                        <p class="nav-type">发表</p>
+                    <div class="header-nav">
+                        <div class="nav-item">
+                            <p class="nav-number">0</p>
+                            <p class="nav-type">关注</p>
+                        </div>
+                        <div class="dash"></div>
+                        <div class="nav-item">
+                            <p class="nav-number">0</p>
+                            <p class="nav-type">粉丝</p>
+                        </div>
+                        <div class="dash"></div>
+                        <div class="nav-item">
+                            <p class="nav-number">0</p>
+                            <p class="nav-type">发表</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sidebar-content">
-            <ul class="sidebar-list">
-                <li><a href="#"><i class="iconfont iconpinglun"></i>我的通知</a></li>
-                <li><a href="#"><i class="iconfont iconshoucang"></i>收藏/历史</a></li>
-                <li><a href="#"><i class="iconfont iconxitongxiaoxi"></i>系统消息</a></li>
-                <li><a href="#"><i class="iconfont iconshangcheng"></i>懂球帝商城</a></li>
-            </ul>
-            <div class="toolsbar">
-                <div class="row">
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconvip"></i>
+            <div class="sidebar-content">
+                <ul class="sidebar-list">
+                    <li><a href="#"><i class="iconfont iconpinglun"></i>我的通知</a></li>
+                    <li><a href="#"><i class="iconfont iconshoucang"></i>收藏/历史</a></li>
+                    <li><a href="#"><i class="iconfont iconxitongxiaoxi"></i>系统消息</a></li>
+                    <li><a href="#"><i class="iconfont iconshangcheng"></i>懂球帝商城</a></li>
+                </ul>
+                <div class="toolsbar">
+                    <div class="row">
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconvip"></i>
+                            </div>
+                            <p>红单会员</p>
                         </div>
-                        <p>红单会员</p>
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconjinnang"></i>
+                            </div>
+                            <p>大数据锦囊</p>
+                        </div>
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconshuju1"></i>
+                            </div>
+                            <p>懂彩帝</p>
+                        </div>
                     </div>
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconjinnang"></i>
+                    <div class="row">
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconworld-cup"></i>
+                            </div>
+                            <p>中超排名预测</p>
                         </div>
-                        <p>大数据锦囊</p>
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconyouxi"></i>
+                            </div>
+                            <p>游戏中心</p>
+                        </div>
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont iconzuqiuchang- rotate"></i>
+                            </div>
+                            <p>我是教练</p>
+                        </div>
                     </div>
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconshuju1"></i>
+                    <div class="row">
+                        <div class="tools">
+                            <div class="icon">
+                                <i class="iconfont icon552dc065f0478"></i>
+                            </div>
+                            <p>扫一扫</p>
                         </div>
-                        <p>懂彩帝</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconworld-cup"></i>
-                        </div>
-                        <p>中超排名预测</p>
-                    </div>
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconyouxi"></i>
-                        </div>
-                        <p>游戏中心</p>
-                    </div>
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont iconzuqiuchang- rotate"></i>
-                        </div>
-                        <p>我是教练</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="tools">
-                        <div class="icon">
-                            <i class="iconfont icon552dc065f0478"></i>
-                        </div>
-                        <p>扫一扫</p>
                     </div>
                 </div>
             </div>
@@ -210,6 +212,9 @@ export default {
        overflow: hidden;
        display: flex;
        flex-direction: column;
+       .sidebar-scroll {
+           overflow: auto;
+       }
        .sidebar-header {
            position: relative;
            width: 100%;

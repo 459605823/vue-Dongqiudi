@@ -68,7 +68,7 @@ export default {
     },
     handlescroll () {
       var totalHeight = document.documentElement.scrollHeight
-      var scrollTop = document.documentElement.scrollTop
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       var clientHeight = document.documentElement.clientHeight
       var bottom = totalHeight - scrollTop - clientHeight
       if (bottom < 50) {
