@@ -1,6 +1,6 @@
 <template>
   <div>
-    <keep-alive>
+    <keep-alive exclude="Archive">
       <router-view/>
     </keep-alive>
   </div>
