@@ -120,6 +120,7 @@
 </template>
 
 <script>
+import BScroll from 'better-scroll'
 export default {
   name: 'Header',
   props: ['list'],
@@ -134,6 +135,9 @@ export default {
       this.$refs.shadow.style.display = 'none'
       this.$modalHelper.beforeClose()
     }
+  },
+  mounted () {
+    this.scroll = new BScroll(this.$refs.sidebar)
   },
   // 如果点击返回离开当前路由，也要恢复页面滚动
   beforeRouteLeave (to, from, next) {
@@ -212,9 +216,6 @@ export default {
        overflow: hidden;
        display: flex;
        flex-direction: column;
-       .sidebar-scroll {
-           overflow: auto;
-       }
        .sidebar-header {
            position: relative;
            width: 100%;
