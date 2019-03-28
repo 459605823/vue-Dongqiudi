@@ -2,7 +2,7 @@
     <div>
         <home-header :list="list"></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
-        <home-matchinfo></home-matchinfo>
+        <matchinfo></matchinfo>
         <home-article :articles="articles"></home-article>
         <loading :isLoading="isLoading"></loading>
         <common-footer></common-footer>
@@ -13,7 +13,7 @@
 import homeHeader from 'common/components/header.vue'
 import homeSwiper from './components/swiper.vue'
 import homeArticle from './components/article.vue'
-import homeMatchinfo from './components/matchinfo.vue'
+import matchinfo from 'common/components/matchinfo.vue'
 import commonFooter from 'common/components/footer.vue'
 import loading from 'common/components/loading.vue'
 import axios from 'axios'
@@ -23,7 +23,7 @@ export default {
     homeHeader,
     homeSwiper,
     homeArticle,
-    homeMatchinfo,
+    matchinfo,
     commonFooter,
     loading
   },

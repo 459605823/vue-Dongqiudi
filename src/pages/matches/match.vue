@@ -155,7 +155,7 @@ export default {
               margin: 1rem 0;
            }
            .info-bottom {
-               color: #aaa;
+               color: $grey;
            }
        }
    }
