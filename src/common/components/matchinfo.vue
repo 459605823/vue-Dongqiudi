@@ -1,56 +1,24 @@
 <template>
     <div>
         <div class="container">
-            <div class="game-info">
+            <div class="game-info" v-for="item of matchinfo" :key="item.id">
                 <div class="info-header">
-                    <span class="league">中超</span>
-                    <span class="round">第2轮</span>
+                    <span class="league">{{item.league}}</span>
+                    <span class="round">第{{item.round}}轮</span>
                     <span class="time">
-                        <div class="time-badge">直播</div>
-                        90'
+                        <div class="time-badge">{{item.liveStatus}}</div>
+                        <span v-if="item.time != null">{{item.time}}</span>
                     </span>
                 </div>
                 <div class="main-info">
-                    <div class="club">
+                    <div class="club" v-for="club of item.clubs" :key="club.id">
                         <div class="club-info">
-                            <img src="http://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DmABW8BAACsptJDfvs734.png" alt="" class="club-badge">
-                            <span>广州富力</span>
+                            <img :src="club.logo" alt="" class="club-badge">
+                            <span>{{club.name}}</span>
                         </div>
-                        <div class="score">2</div>
+                        <div class="score" v-if="club.score != null">{{club.score}}</div>
                     </div>
-                      <div class="club">
-                        <div class="club-info">
-                            <img src="http://sd.qunliao.info/fastdfs3/M00/B5/8F/ChOxM1xC25WADjxlAAAk_dekrYc862.png" alt="" class="club-badge">
-                            <span>大连一方</span>
-                        </div>
-                        <div class="score">2</div>
-                    </div>
-                </div>
-            </div>
-            <div class="game-info">
-                <div class="info-header">
-                    <span class="league">中超</span>
-                    <span class="round">第2轮</span>
-                    <span class="time">
-                        <div class="time-badge">直播</div>
-                        90'
-                    </span>
-                </div>
-                <div class="main-info">
-                    <div class="club">
-                        <div class="club-info">
-                            <img src="http://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DmABW8BAACsptJDfvs734.png" alt="" class="club-badge">
-                            <span>广州富力</span>
-                        </div>
-                        <div class="score">2</div>
-                    </div>
-                      <div class="club">
-                        <div class="club-info">
-                            <img src="http://sd.qunliao.info/fastdfs3/M00/B5/8F/ChOxM1xC25WADjxlAAAk_dekrYc862.png" alt="" class="club-badge">
-                            <span>大连一方</span>
-                        </div>
-                        <div class="score">2</div>
-                    </div>
+                    <div class="startTime" v-if="item.startTime != null">{{item.startTime}}</div>
                 </div>
             </div>
         </div>
@@ -59,7 +27,8 @@
 
 <script>
 export default {
-  name: 'MatchInfo'
+  name: 'MatchInfo',
+  props: ['matchinfo']
 }
 </script>
 
@@ -93,6 +62,7 @@ export default {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            position: relative;
             .club {
                 width: 100%;
                 height: 2rem;
@@ -117,8 +87,17 @@ export default {
                     float: right;
                     height: 100%;
                     line-height: 2rem;
-                    margin-right: 2rem;
+                    margin-right: 1rem;
+                    width: 1rem;
                 }
+            }
+            .startTime {
+                width: 3rem;
+                height: 3rem;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -1.5rem;
             }
         }
     }

@@ -47,7 +47,43 @@
       "imgUrl": "https://img1.qunliao.info/fastdfs3/M00/22/3C/180x135/crop/-/ChO2w1yGgw-AUj1eAANENfNXtzU174.jpg",
       "title": "欧冠赛场上“翻盘奇迹”越来越多，究竟为哪般？",
       "comments": 523
+    }],
+    "matchinfo": [{
+      "id": "01",
+      "league": "中超",
+      "round": 2,
+      "liveStatus": "已结束",
+      "time": null,
+      "startTime": null,
+      "clubs": [{
+        "id": "001",
+        "name": "广州富力",
+        "logo": "http://sd.qunliao.info/fastdfs3/M00/B5/73/ChOxM1xC2DmABW8BAACsptJDfvs734.png",
+        "score": 2
+      }, {
+        "id": "002",
+        "name": "大连一方",
+        "logo": "http://sd.qunliao.info/fastdfs3/M00/B5/8F/ChOxM1xC25WADjxlAAAk_dekrYc862.png",
+        "score": 1
+      }]
+    }, {
+      "id": "02",
+      "league": "中超",
+      "round": 3,
+      "liveStatus": "直播中",
+      "time": "45'",
+      "startTime": null,
+      "clubs": [{
+        "id": "003",
+        "name": "河北华夏幸福",
+        "logo": "http://sd.qunliao.info/fastdfs3/M00/B5/8F/ChOxM1xC29mAPQ5JAAAgBvP_0Tg206.png",
+        "score": 0
+      }, {
+        "id": "004",
+        "name": "上海上港",
+        "logo": "http://sd.qunliao.info/fastdfs3/M00/B5/8B/ChOxM1xC2qiAQieiAAAajZ2Aico137.png",
+        "score": 1
+      }]
     }]
-   
   }
 }

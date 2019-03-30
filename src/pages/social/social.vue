@@ -3,7 +3,7 @@
   <div>
     <social-header :list="list" :headTitle="headTitle"></social-header>
     <div class="gap"></div>
-    <matchinfo></matchinfo>
+    <matchinfo :matchinfo="matchinfo"></matchinfo>
     <social-article :articles="articles"></social-article>
     <loading :isLoading="isLoading"></loading>
     <common-footer></common-footer>
@@ -31,6 +31,7 @@ export default {
       list: ['动态', '赛程', '数据', '球员', '资料'],
       headTitle: '圈子',
       articles: [],
+      matchinfo: [],
       isLoading: false
     }
   },
@@ -43,6 +44,7 @@ export default {
       if (res.ret && res.data) {
         const data = res.data
         this.articles = data.articles
+        this.matchinfo = data.matchinfo
       }
     },
     handlescroll () {

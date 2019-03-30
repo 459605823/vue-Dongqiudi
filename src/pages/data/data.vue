@@ -1,6 +1,7 @@
 <template>
   <div>
     <data-header :list="list" :headTitle="headTitle"></data-header>
+    <table-header></table-header>
     <common-footer></common-footer>
   </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
 import commonFooter from 'common/components/footer.vue'
 import dataHeader from 'common/components/header.vue'
+import tableHeader from './components/tableHeader.vue'
 export default {
   name: 'Data',
   components: {
     commonFooter,
-    dataHeader
+    dataHeader,
+    tableHeader
   },
   data () {
     return {

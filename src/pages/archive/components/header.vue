@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <router-link to="/"><i class="back iconfont iconfanhui"></i></router-link>
+            <router-link :to="from"><i class="back iconfont iconfanhui"></i></router-link>
             <span class="header-title">懂球帝</span>
             <span class="comment">{{comments}}评论</span>
         </header>
@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'ArchiveHeader',
-  props: ['comments']
+  props: ['comments', 'from']
 }
 </script>
 

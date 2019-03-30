@@ -2,7 +2,7 @@
     <div>
         <home-header :list="list"></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
-        <matchinfo></matchinfo>
+        <matchinfo :matchinfo="matchinfo"></matchinfo>
         <home-article :articles="articles"></home-article>
         <loading :isLoading="isLoading"></loading>
         <common-footer></common-footer>
@@ -33,7 +33,8 @@ export default {
       articles: [],
       isLoading: false,
       timer: null,
-      list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦']
+      list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦'],
+      matchinfo: []
     }
   },
   methods: {
@@ -46,6 +47,7 @@ export default {
         const data = res.data
         this.swiperList = data.swiperList
         this.articles = data.articles
+        this.matchinfo = data.matchinfo
       }
     },
     handlescroll () {

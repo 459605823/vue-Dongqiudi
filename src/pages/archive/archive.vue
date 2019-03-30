@@ -1,6 +1,6 @@
 <template>
     <div>
-        <archive-header :comments="res.comments"></archive-header>
+        <archive-header :comments="res.comments" :from="from"></archive-header>
         <archive-content :title="res.title" :writer="res.writer" :time="res.time" :content="res.content" :imgUrl="res.imgUrl"></archive-content>
         <archive-footer></archive-footer>
     </div>
@@ -20,7 +20,8 @@ export default {
   },
   data () {
     return {
-      res: {}
+      res: {},
+      from: ''
     }
   },
   methods: {
@@ -42,6 +43,11 @@ export default {
   },
   mounted () {
     this.getArticleInfo()
+  },
+  beforeRouteEnter (to, from, next) {
+    next(vm => {
+      vm.from = from.fullPath // 保存来源路由，保证点击返回回到之前的页面
+    })
   }
 }
 </script>
