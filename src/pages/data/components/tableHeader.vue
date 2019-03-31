@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav class="navbar">
-      <div class="selectBtn" @click="showSelectBar">
-        2018/19
+      <div class="selectBtn">
+        <span id="trigger">2018/19</span>
         <span class="dropdownBtn iconfont iconxiala"></span>
       </div>
       <div class="btn-group">
@@ -37,6 +37,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import MobileSelect from 'mobile-select'
 export default {
   name: 'tableHeader',
   methods: {
@@ -53,6 +54,15 @@ export default {
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.selectList)
+    /* eslint-disable */
+    var mobileSelect = new MobileSelect({
+        trigger: "#trigger",
+        wheels: [
+            {
+              data: ["2018/19", "2017/18", "2016/17", "2016/15", "2015/14", "2014/13", "2013/12"]
+            }
+        ]
+    });
   },
   // 如果点击返回离开当前路由，也要恢复页面滚动
   beforeRouteLeave (to, from, next) {

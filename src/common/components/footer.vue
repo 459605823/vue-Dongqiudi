@@ -54,8 +54,8 @@ export default {
               margin-bottom: 0.4rem;
           }
           img {
-              width: 70%;
-              height: 100%;
+              max-width: 70%;
+              height: auto;
           }
       }
       .footer-btn:hover {
