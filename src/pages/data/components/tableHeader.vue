@@ -82,9 +82,6 @@ export default {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  .selectBtn {
-    width: 6rem;
-  }
   .btn-group {
     margin-left: 1rem;
     flex: 1;
