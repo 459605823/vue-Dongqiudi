@@ -33,7 +33,7 @@ export default {
       articles: [],
       isLoading: false,
       timer: null,
-      list: ['头条', '热门', '视频', '西甲', '意甲', '德甲', '集锦'],
+      list: ['头条', '热门', '中超', '懂球号', '集锦', '英超', '西甲', '意甲', '德甲', '五洲', '深度', '专题'],
       matchinfo: []
     }
   },

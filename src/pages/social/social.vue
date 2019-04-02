@@ -28,7 +28,7 @@ export default {
   },
   data () {
     return {
-      list: ['动态', '赛程', '数据', '球员', '资料'],
+      list: ['动态', '赛程', '数据', '球员', '资料', '讨论', '社交'],
       headTitle: '圈子',
       articles: [],
       matchinfo: [],

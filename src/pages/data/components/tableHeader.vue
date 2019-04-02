@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import BScroll from 'better-scroll'
+// import BScroll from 'better-scroll'
 import MobileSelect from 'mobile-select'
 export default {
   name: 'tableHeader',
@@ -53,7 +53,7 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new BScroll(this.$refs.selectList)
+    // this.scroll = new BScroll(this.$refs.selectList)
     /* eslint-disable */
     var mobileSelect = new MobileSelect({
         trigger: "#trigger",
@@ -65,10 +65,10 @@ export default {
     });
   },
   // 如果点击返回离开当前路由，也要恢复页面滚动
-  beforeRouteLeave (to, from, next) {
-    this.$modalHelper.beforeClose()
-    next()
-  }
+  // beforeRouteLeave (to, from, next) {
+  //   this.$modalHelper.beforeClose()
+  //   next()
+  // }
 }
 </script>
 

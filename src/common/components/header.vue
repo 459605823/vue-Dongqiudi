@@ -5,11 +5,11 @@
             <img src="https://img1.qunliao.info/fastdfs4/M00/B1/6D/100x100/-/-/ChMf8FxIslCANJOdAAAok1n7B7I893.jpg" alt="" class="user-avatar" @click="showSidebar">
             <h1>{{headTitle}}</h1>
         </div>
-        <div class="home-nav">
+        <nav class="home-nav">
             <ul>
             <li v-for="(item, index) in list" :key="index"><a href="#">{{item}}</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="shadow" ref="shadow" @click="hideSidebar"></div>
     <div class="sidebar" ref="sidebar">
@@ -184,11 +184,16 @@ export default {
    }
     .home-nav {
        line-height: 3rem;
-       padding: 0 1rem;
        border-bottom: 1px solid #ccc;
+       padding: 0 0.5rem;
        ul {
           display: flex;
-          justify-content:space-between;
+          overflow-x: auto;
+          li {
+            flex: 0 0 auto;
+            text-align: center;
+            margin: 0 2rem 0 0;
+          }
           a {
               color: #000;
               font-size: 1.2rem;
@@ -197,6 +202,9 @@ export default {
           a:hover {
               color: $default-color;
           }
+       }
+       ul::-webkit-scrollbar {
+           display: none;
        }
    }
    .shadow {
