@@ -5,11 +5,9 @@
             <img src="https://img1.qunliao.info/fastdfs4/M00/B1/6D/100x100/-/-/ChMf8FxIslCANJOdAAAok1n7B7I893.jpg" alt="" class="user-avatar" @click="showSidebar">
             <h1>{{headTitle}}</h1>
         </div>
-        <nav class="home-nav">
-            <ul>
+        <ul class="home-nav">
             <li v-for="(item, index) in list" :key="index"><a href="#">{{item}}</a></li>
-            </ul>
-        </nav>
+        </ul>
     </div>
     <div class="shadow" ref="shadow" @click="hideSidebar"></div>
     <div class="sidebar" ref="sidebar">
@@ -182,17 +180,27 @@ export default {
            cursor: pointer;
        }
    }
-    .home-nav {
-       line-height: 3rem;
-       border-bottom: 1px solid #ccc;
-       padding: 0 0.5rem;
-       ul {
+       .home-nav {
           display: flex;
           overflow-x: auto;
+          border-bottom: 1px solid #ccc;
+          width: 100%;
+          padding: 0 .5rem;
+          height: 3rem;
+          align-items: center;
           li {
             flex: 0 0 auto;
             text-align: center;
-            margin: 0 2rem 0 0;
+            margin: 0 1rem;
+            box-sizing: border-box;
+            height: 100%;
+            line-height: 3rem;
+          }
+          li:hover {
+              border-bottom: .2rem solid $default-color;
+          }
+          li:first-child {
+            margin-left: 0;
           }
           a {
               color: #000;
@@ -203,10 +211,9 @@ export default {
               color: $default-color;
           }
        }
-       ul::-webkit-scrollbar {
+       .home-nav::-webkit-scrollbar {
            display: none;
        }
-   }
    .shadow {
        position: fixed;
        background-color: #2d2727;
