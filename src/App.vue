@@ -1,7 +1,9 @@
 <template>
   <div>
     <keep-alive exclude="Archive">
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </keep-alive>
   </div>
 </template>
@@ -13,4 +15,10 @@ export default {
 </script>
 
 <style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 </style>
